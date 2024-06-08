@@ -1,4 +1,4 @@
-<idea-plugin version="2">
+<idea-plugin>
     <name>Output Link Filter</name>
     <description><![CDATA[
     Plugin that filters output window for HTTP links and file paths and converts them to clickable links.
@@ -10,11 +10,10 @@
     <img src="https://raw.github.com/minchenkov/output-link-filter/master/META-INF/output-link-filter.png" />
 
     ]]>
-
     </description>
     <version>0.2</version>
     <vendor>metahouse</vendor>
-    <idea-version since-build="123.72"/>
+    <idea-version since-build="2024.1.1"/>
 
     <extensions defaultExtensionNs="com.intellij">
         <consoleFilterProvider implementation="ru.metahouse.idea.linkfilter.OutputLinkFilterProvider"/>

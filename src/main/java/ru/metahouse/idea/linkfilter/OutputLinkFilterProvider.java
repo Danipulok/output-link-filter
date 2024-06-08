@@ -5,8 +5,7 @@ import com.intellij.execution.filters.Filter;
 import com.intellij.openapi.project.Project;
 import org.jetbrains.annotations.NotNull;
 
-public class OutputLinkFilterProvider
-        implements ConsoleFilterProvider {
+public class OutputLinkFilterProvider implements ConsoleFilterProvider {
 
     @NotNull
     @Override
