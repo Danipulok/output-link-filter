@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 public class OutputLinkFilter implements Filter {
 	
 	private static final Pattern FILE_PATTERN = Pattern.compile(
-			"((/|([a-zA-Z]:[\\\\/]))[a-zA-Z0-9/\\\\\\-_. ]+)\\.[a-z]+(:(\\d+))?(:(\\d+))?"
+			"\\b((/|([a-zA-Z]:[\\\\/]))[a-zA-Z0-9/\\\\\\-_. ]+)(:(\\d+))?(:(\\d+))?"
 	);
 	
 	private final Project project;
