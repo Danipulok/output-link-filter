@@ -3,19 +3,19 @@
     <description><![CDATA[
     Plugin that filters output window for HTTP links and file paths and converts them to clickable links.
 
-    <a href="https://github.com/minchenkov/output-link-filter">https://github.com/minchenkov/output-link-filter</a>
+    <a href="https://github.com/Shadow-Devil/output-link-filter">https://github.com/Shadow-Devil/output-link-filter</a>
     <br/>
-    Based on <a href="https://github.com/siosio/consoleLink">https://github.com/siosio/consoleLink</a>
+    Based on <a href="https://github.com/minchenkov/output-link-filter">https://github.com/minchenkov/output-link-filter</a>
     <br/>
-    <img src="https://raw.github.com/minchenkov/output-link-filter/master/META-INF/output-link-filter.png" />
+    <img src="https://raw.github.com/Shadow-Devil/output-link-filter/master/src/resources/META-INF/output-link-filter.png" />
 
     ]]>
     </description>
-    <version>0.2</version>
-    <vendor>metahouse</vendor>
+    <version>0.1</version>
+    <vendor>f.schnabel</vendor>
     <idea-version since-build="2024.1.1"/>
 
     <extensions defaultExtensionNs="com.intellij">
-        <consoleFilterProvider implementation="ru.metahouse.idea.linkfilter.OutputLinkFilterProvider"/>
+        <consoleFilterProvider implementation="prj.fschnabel.idea.linkfilter.OutputLinkFilterProvider"/>
     </extensions>
 </idea-plugin>

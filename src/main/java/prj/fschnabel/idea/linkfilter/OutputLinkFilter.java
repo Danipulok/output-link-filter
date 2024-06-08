@@ -1,4 +1,4 @@
-package ru.metahouse.idea.linkfilter;
+package prj.fschnabel.idea.linkfilter;
 
 import com.intellij.execution.filters.*;
 import com.intellij.ide.browsers.OpenUrlHyperlinkInfo;
