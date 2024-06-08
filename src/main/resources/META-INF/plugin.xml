@@ -1,5 +1,6 @@
 <idea-plugin>
-    <name>Output Link Filter</name>
+    <name>Clickable Output Links</name>
+    <id>f.schnabel.idea.linkfilter</id>
     <description><![CDATA[
     Plugin that filters output window for HTTP links and file paths and converts them to clickable links.
 
@@ -14,7 +15,7 @@
     <version>0.1</version>
     <vendor>f.schnabel</vendor>
     <idea-version since-build="2024.1.1"/>
-
+    <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <consoleFilterProvider implementation="prj.fschnabel.idea.linkfilter.OutputLinkFilterProvider"/>
     </extensions>

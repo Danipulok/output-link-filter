@@ -3,7 +3,7 @@ plugins {
     id 'org.jetbrains.intellij' version "1.17.3"
 }
 
-group = 'org.example'
+group = 'prj.fschnabel.idea'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -13,6 +13,7 @@ repositories {
 intellij {
   version = "2024.1.1"
   type = "IC" // Target IDE Platform
+    plugins = []
 
 }
 
