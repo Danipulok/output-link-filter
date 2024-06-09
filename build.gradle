@@ -11,7 +11,7 @@ repositories {
 }
 
 intellij {
-  version = "2024.1.1"
+  version = "2023.1.1"
   type = "IC" // Target IDE Platform
     plugins = []
 
