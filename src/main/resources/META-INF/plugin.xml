@@ -13,7 +13,6 @@
     ]]>
     </description>
     <vendor>f.schnabel</vendor>
-    <idea-version since-build="2024.1.1"/>
     <depends>com.intellij.modules.platform</depends>
     <extensions defaultExtensionNs="com.intellij">
         <consoleFilterProvider implementation="prj.fschnabel.idea.linkfilter.OutputLinkFilterProvider"/>
