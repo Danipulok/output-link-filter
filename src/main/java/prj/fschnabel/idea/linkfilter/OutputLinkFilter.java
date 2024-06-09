@@ -14,7 +14,7 @@ import java.util.regex.Pattern;
 public class OutputLinkFilter implements Filter {
 	
 	private static final Pattern FILE_PATTERN = Pattern.compile(
-			"\\b((/|([a-zA-Z]:[\\\\/]))[a-zA-Z0-9/\\\\\\-_. ]+)(:(\\d+))?(:(\\d+))?"
+			"\\b((/|([a-zA-Z]:[\\\\/]))[a-zA-Z0-9/\\\\\\-_. ]+)(:(\\d+))?(:(\\d+))?:?"
 	);
 	
 	private final Project project;
@@ -60,6 +60,9 @@ public class OutputLinkFilter implements Filter {
 	private @Nullable HyperlinkInfo buildFileHyperlinkInfo(String url) {
 		if (url.endsWith(".html") || url.startsWith("file://")) {
 			return null;
+		}
+		if (url.endsWith(":")) {
+			url = url.substring(0, url.length() - 1);
 		}
 		int documentLine = 0;
 		int documentColumn = 0;
